@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practicals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .details {
+      display: none;
+      margin-top: 10px;
+      color: #444;
+    }
+    .view-btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Practicals</h1>
+
+  <div class="card">
+    <strong>Practical 1:</strong> Introduction to PHP and Apache Web Server
+    <button class="view-btn" onclick="toggleDetails(1)">View Details</button>
+    <div class="details" id="details1">
+      Install and set up XAMPP/WAMP. Learn basic PHP: <code>&lt;?php echo "Hello World!"; ?&gt;</code>
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 2:</strong> Designing Web Pages for Your College
+    <button class="view-btn" onclick="toggleDetails(2)">View Details</button>
+    <div class="details" id="details2">
+      Use HTML/CSS to design college-related pages with headers, images, and styles.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 3:</strong> Create Your Class Timetable Using Table Tag
+    <button class="view-btn" onclick="toggleDetails(3)">View Details</button>
+    <div class="details" id="details3">
+      Create a timetable using HTML table tags. Include subject rows and columns for days/time.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 4:</strong> Create a User Student Feedback Form
+    <button class="view-btn" onclick="toggleDetails(4)">View Details</button>
+    <div class="details" id="details4">
+      Design a feedback form using HTML form elements like input, textarea, and button.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 5:</strong> Design a web page for your hometown with an attractive design using internal CSS
+    <button class="view-btn" onclick="toggleDetails(5)">View Details</button>
+    <div class="details" id="details5">
+      Create a colorful and informative hometown page using internal CSS for styling.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 6:</strong> Develop a JavaScript to Display Today’s Date
+    <button class="view-btn" onclick="toggleDetails(6)">View Details</button>
+    <div class="details" id="details6">
+      Write JS to show today’s date using <code>document.write(new Date())</code>.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 7:</strong> Write a JavaScript Calculator
+    <button class="view-btn" onclick="toggleDetails(7)">View Details</button>
+    <div class="details" id="details7">
+      Create a calculator using HTML and JS to perform +, -, *, / operations.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 8:</strong> PHP Visitor Counter
+    <button class="view-btn" onclick="toggleDetails(8)">View Details</button>
+    <div class="details" id="details8">
+      Track and display number of visitors using PHP and file storage.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 9:</strong> Page Visit Tracker (Enhanced)
+    <button class="view-btn" onclick="toggleDetails(9)">View Details</button>
+    <div class="details" id="details9">
+      Enhance your PHP visitor counter with better styling and reset options.
+    </div>
+  </div>
+
+  <div class="card">
+    <strong>Practical 10:</strong> Mini Project Integration
+    <button class="view-btn" onclick="toggleDetails(10)">View Details</button>
+    <div class="details" id="details10">
+      Combine HTML, CSS, JS, and PHP into a simple full-stack mini project.
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const detail = document.getElementById("details" + id);
+      if (detail.style.display === "block") {
+        detail.style.display = "none";
+      } else {
+        detail.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
